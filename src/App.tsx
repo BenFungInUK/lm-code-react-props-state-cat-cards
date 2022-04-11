@@ -26,6 +26,7 @@ function App() {
   const [dogs, setDogs] = useState<Array<Dog>>(dogData);
 
   function addNewPet(pet: Pet) {
+    console.log(pet);
     pet.type === "cat"
       ? setCats([
           ...cats,
